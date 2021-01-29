@@ -1,2 +1,3 @@
-#React JS Movie Web Service
+# React JS Movie Web App
+
 Nomad Coder
