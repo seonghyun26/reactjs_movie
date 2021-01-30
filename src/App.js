@@ -1,9 +1,16 @@
 import React from "react";
 
+function Food({ name, type }){
+  return <h3>I like {name} ({type})</h3>;
+}
+
 function App() {
   return (
     <div className="App">
-      Hello World!
+      <h1>Hello!</h1>
+      <Food name="kimchi"/>
+      <Food name="rice"/>
+      <Food name="ramen" type="noodle"/>
     </div>
   );
 }
