@@ -1,6 +1,6 @@
 import React from "react";
-import PropTypes from "prop-types";
 
+<<<<<<< HEAD
 
 
 function App() {
@@ -9,6 +9,27 @@ function App() {
       <h1>Hello World!</h1>
     </div>
   );
+=======
+class App extends React.Component{
+  state = {
+    isLoading: true
+  }
+  
+  componentDidMount(){
+    setTimeout( () => {
+      this.setState({ isLoading: false });
+    }, 6000);
+  }
+  
+  render(){
+    const { isLoading } = this.state;
+    return (
+      <div>
+        <h1>{ isLoading ? "Loading..." : "Ready!"}</h1>
+      </div>
+    );
+  }
+>>>>>>> 3_state
 }
 
 export default App;
