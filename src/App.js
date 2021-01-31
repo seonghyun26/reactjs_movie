@@ -1,15 +1,5 @@
 import React from "react";
 
-<<<<<<< HEAD
-
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  );
-=======
 class App extends React.Component{
   state = {
     isLoading: true
@@ -29,7 +19,6 @@ class App extends React.Component{
       </div>
     );
   }
->>>>>>> 3_state
 }
 
 export default App;
