@@ -1,15 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+class App extends React.Component{
+  state = {
+    count: 0
+  };
 
+  add = () => {
+    console.log("add");
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-      {foodILike.map(renderFood)}
-    </div>
-  );
+  minus = () => {
+    console.log("minus")
+  };
+
+  render(){
+    return (
+      <div>
+        <h1>Number: {this.state.count}</h1>
+        <button onClick={this.add}>Add</button>
+        <button onClick={this.minus}>Minus</button>
+      </div>
+    );
+  }
 }
 
 export default App;
